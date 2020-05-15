@@ -1,0 +1,97 @@
+<!DOCTYPE html> 
+<html> 
+	<head>
+		<style>
+		body {
+		background-image: url("wallpa.png");
+		}
+		
+		h1{
+			text-shadow: 3px 3px yellow;
+			}
+			
+		.border1 {
+			margin: auto;
+			border: 70px solid transparent;
+			width: 900px;
+			height: 600px;
+			border-image: url(border2.png)20% round;
+		}
+		
+		a {
+			text-decoration: none;
+			display: inline-block;
+			padding: 8px 16px;
+		}
+
+		a:hover {
+			background-color: #ddd;
+			color: black;
+		}
+		.previous {
+			background-color: #f1f1f1;
+			color: black;
+		}
+
+		.next {
+			background-color: #4CAF50;
+			color: white;
+		}
+		.center{
+			text-align:center;
+			}
+			
+		.right{
+			
+			text-align:right;
+			}
+			
+	</style>
+	<script>
+		function validateForm() {
+			var x = document.forms["myForm"]["fname"].value;
+			if (x == "") {
+				alert("Name must be filled out");
+				return false;
+			}
+		}
+		</script>
+	<meta charset = "UTF-8">
+		<title><b> feedback </b></title>
+
+	</head>
+	
+	<body> 
+		
+		<div class="border1">
+	
+		<h1 align=center>FEEDBACK<h1>
+
+		<h3>Fill the form to send feedback </h3>
+		<p> Please fill out the form to continue</p>
+		<form name="myForm" action="/fill_form.php" onsubmit="return validateForm()" method="post">
+		Name: <input type="text" name="fname">
+		
+		</form><br>
+		
+		<form name="myForm" action="/fill_form.php" onsubmit="return validateForm()" method="post">
+		Age: <input type="number_format" name="fnum">
+		<br><br>
+		</form>
+		<textarea name="Comment" action="/fill_form.php" onsubmit="return validateForm()" method="post">
+		Feedback: 
+		</textarea><br>
+		
+		<td colspan="1" style="text-align:center;">
+		<button type="button" onclick="alert('Feedback has been sent!')"><input type="submit" ></button>
+		
+		<br><br>
+
+		<a href="file:///C:/xampp/htdocs/individu%20project/play_audio.html" class="previous">&laquo; Previous</a>
+		<div class = "center"><a href="file:///C:/xampp/htdocs/individu%20project/main_page.html" class="">&laquo; Home</a></div>
+		
+	
+		</div>
+
+	</body> 
+</html>
