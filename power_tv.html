@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+		body {
+		background-image: url("wallpa.png");
+		}
+		
+		h1{
+			text-shadow: 3px 3px yellow;
+			}
+		
+		.border1 {
+			margin: auto;
+			border: 70px solid transparent;
+			width: 900px;
+			height: 700px;
+			border-image: url(border2.png)20% round;
+		}
+		
+		a {
+			text-decoration: none;
+			display: inline-block;
+			padding: 8px 16px;
+		}
+
+		a:hover {
+			background-color: #ddd;
+			color: black;
+		}
+		.previous {
+			background-color: #f1f1f1;
+			color: black;
+		}
+
+		.next {
+			background-color: #4CAF50;
+			color: white;
+		}
+		.center{
+			text-align:center;
+			}
+			
+		.right{
+			
+			text-align:right;
+			}
+		
+		</style>
+		<meta charset = "UTF-8">
+		<title><b> power tv </b></title>
+	</head>
+	<body>
+	
+	<div class="border1">
+	
+		<h1 align=center>Turn Power ON and OFF TV<h1>
+
+		<h3>Click That Button! </h3>
+
+		<p id="demo">Click to open or close the TV</p>
+
+		
+		<button onclick="document.getElementById('myImage').src='opentv.jpg'">Open TV</button>
+
+		<img id="myImage" src="closetv.jpg" style="width:500px">
+
+		<button onclick="document.getElementById('myImage').src='closetv.jpg'">Close TV</button><br><br><br><br><br><br>
+		
+		
+		<a href="file:///C:/xampp/htdocs/individu%20project/bio.html" class="previous">&laquo; Previous</a>
+		<div class = "center"><a href="file:///C:/xampp/htdocs/individu%20project/main_page.html" class="">&laquo; Home</a></div>
+		<div class="right"><a href="file:///C:/xampp/htdocs/individu%20project/video_time.html" class="next">Next &raquo;</a>
+		</div>
+	</div>
+	
+	</body>
+</html>
